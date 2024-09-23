@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form id="currency-form">
+            <div>
+                <label for="amount">Amount:</label>
+                <input type="text" name="amount" id="amount" required>
+            </div>
+            <br>
+            <div class="dropdowns">
+                <label for="from">From:</label>
+                <select name="from" id="from">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="GBP">GBP</option>
+                    <option value="AUD">AUD</option>
+                </select>
+            </div>
+            <br>
+            <div class="dropdowns">
+                <label for="to">To:</label>
+                <select name="to" id="to">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="GBP">GBP</option>
+                    <option value="AUD">AUD</option>
+                    <option value="PAK">PAK</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" value="Convert">
+            <br>
+            <div>
+                <label for="result">Converted Amount:</label>
+                <input type="text" id="result" readonly>
+            </div>
+            <br>
+            <div id="flags">
+                <img id="from-flag" src="" alt="From Currency Flag" class="hidden">
+                <img id="to-flag" src="" alt="To Currency Flag" style="display:none;">
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
